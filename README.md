@@ -30,6 +30,7 @@ $ npm run build:linux
 ```
 
 ```
+#此处是关键，本地编译时无法访问科学上网请配置以下参数
 # 1. 设置 Electron 镜像
 $env:ELECTRON_MIRROR="https://artifacts.electronjs.org/mirrors/electron/"
 
