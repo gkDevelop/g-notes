@@ -1,0 +1,209 @@
+
+.main-container[data-v-ec1a8445] {
+  height: 100%;
+}
+.header-section[data-v-ec1a8445] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.page-title[data-v-ec1a8445] {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(55 65 81);
+}
+.add-btn[data-v-ec1a8445] {
+  /* 通过 element-plus 的 type="primary" 属性控制样式 */
+}
+.btn-icon[data-v-ec1a8445] {
+  margin-right: 4px;
+}
+.empty-state[data-v-ec1a8445] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 256px;
+  /* h-64 */
+  color: rgb(156 163 175);
+  /* text-gray-400 */
+}
+.empty-icon[data-v-ec1a8445] {
+  /* 通过 :size 属性控制图标大小 */
+}
+.empty-text[data-v-ec1a8445] {
+  margin-top: 8px;
+}
+.notes-grid[data-v-ec1a8445] {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  /* grid-cols-1 */
+  gap: 24px;
+  /* gap-6 */
+}
+@media (min-width: 768px) {
+.notes-grid[data-v-ec1a8445] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* md:grid-cols-2 */
+}
+}
+@media (min-width: 1024px) {
+.notes-grid[data-v-ec1a8445] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* lg:grid-cols-3 */
+}
+}
+.note-card[data-v-ec1a8445] {
+  position: relative;
+  /* relative */
+  padding: 10px;
+  /* p-5 */
+  transition-property: all;
+  /* transition-all */
+  transform: translate(0, 0);
+  /* transform */
+  border-radius: 8px;
+  /* rounded-lg */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  /* shadow-sm */
+}
+.note-card[data-v-ec1a8445]:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* hover:shadow-md */
+  transform: translateY(-4px);
+  /* hover:-translate-y-1 */
+}
+.card-header[data-v-ec1a8445] {
+  display: flex;
+  align-items: flex-start;
+  /* items-start */
+  justify-content: space-between;
+}
+.note-title[data-v-ec1a8445] {
+  font-size: 1.125rem;
+  /* text-lg */
+  font-weight: bold;
+  /* font-bold */
+  color: rgb(55 65 81);
+  /* text-gray-800 */
+  flex: 1;
+  /* 让标题占据剩余空间 */
+  text-overflow: ellipsis;
+  /* truncate */
+  white-space: nowrap;
+  /* truncate */
+  overflow: hidden;
+  /* truncate */
+  padding-right: 48px;
+  /* pr-12 */
+}
+.action-buttons[data-v-ec1a8445] {
+  position: absolute;
+  /* absolute 定位 */
+  top: 16px;
+  /* top-4 (转换为像素) */
+  right: 4px;
+  /* right-4 (转换为像素) */
+  display: flex;
+  /* space-x-1 (转换为像素) */
+}
+.pin-btn[data-v-ec1a8445] {
+  /* 默认样式 */
+}
+.pin-btn.pinned[data-v-ec1a8445] {
+  color: rgb(37 99 235);
+  /* text-blue-600 */
+}
+.pin-btn.not-pinned[data-v-ec1a8445] {
+  color: rgb(156 163 175);
+  /* text-gray-400 */
+}
+.delete-btn[data-v-ec1a8445] {
+  color: rgb(156 163 175);
+  /* text-gray-400 */
+}
+.delete-btn[data-v-ec1a8445]:hover {
+  color: rgb(239 68 68);
+  /* hover:text-red-500 */
+}
+.note-content[data-v-ec1a8445] {
+  /* mb-8 */
+  color: rgb(55 65 81);
+  /* text-gray-700 */
+  white-space: pre-wrap;
+  /* 保留换行符和空格，同时允许自动换行 */
+  word-break: break-word;
+  /* 长文本换行 */
+  height: 205px;
+  /* 固定高度 */
+  min-height: 100px;
+  overflow-y: auto;
+  /* 垂直方向滚动 */
+  overflow-x: hidden;
+  /* 水平方向不显示滚动条，文本会自动换行 */
+  padding-right: 8px;
+  /* 为滚动条留出一些空间 */
+  box-sizing: border-box;
+  /* 包含padding和border在高度内 */
+  margin-bottom: 1px;
+}
+.note-content-input[data-v-ec1a8445] {
+  white-space: normal;
+  /* 允许换行 */
+  word-break: break-word;
+  /* 长文本换行 */
+  height: 140px;
+  /* 固定高度 */
+  min-height: 100px;
+  overflow-y: auto;
+  /* 垂直方向滚动 */
+  overflow-x: hidden;
+  /* 水平方向不显示滚动条，文本会自动换行 */
+  padding-right: 8px;
+  /* 为滚动条留出一些空间 */
+  box-sizing: border-box;
+  /* 包含padding和border在高度内 */
+}
+.note-date[data-v-ec1a8445] {
+  /* absolute */
+  bottom: 16px;
+  /* bottom-4 (转换为像素) */
+  right: 16px;
+  /* right-4 (转换为像素) */
+  font-size: 0.75rem;
+  /* text-xs */
+  color: rgb(107 114 128);
+  /* text-gray-500 */
+  margin-top: 10px;
+  text-align: right;
+}
+.color-options[data-v-ec1a8445] {
+  display: flex;
+  gap: 8px;
+  /* space-x-2 */
+}
+.color-option[data-v-ec1a8445] {
+  width: 32px;
+  /* w-8 */
+  height: 32px;
+  /* h-8 */
+  border-radius: 9999px;
+  /* rounded-full */
+  cursor: pointer;
+  /* cursor-pointer */
+  border-width: 2px;
+  /* border-2 */
+  border-color: transparent;
+  /* border-transparent */
+}
+.color-option.selected-color[data-v-ec1a8445] {
+  border-color: rgb(59 130 246);
+  /* border-blue-500 */
+}
+.dialog-cancel-btn[data-v-ec1a8445] {
+  /* element-plus 默认样式 */
+}
+.dialog-confirm-btn[data-v-ec1a8445] {
+  /* element-plus 默认样式 */
+}
